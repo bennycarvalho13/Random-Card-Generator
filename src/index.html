@@ -3,26 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    <title>Card Generator</title>
+    <script
+      src="https://kit.fontawesome.com/8dac9922cd.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-success">
+    <div class="container">
+      <div class="row justify-content-center mt-4">
+        <div class="col-2 bg-light rounded-2">
+          <div class="row p-2 justify-content-start">
+            <div class="col-3 py-1" id="typeOne">
+              <h1 class="text-danger">&#9829;</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center py-5">
+            <div class="col-3 text-center">
+              <div id="number" class="h1">1</div>
+            </div>
+          </div>
+          <div class="row p-2 justify-content-end">
+            <div class="col-3 py-1" id="typeTwo">
+              <h1 class="text-danger">&#9829;</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-5 offset-3 me-5">
+        <button type="button" class="btn btn-primary" id="generate">
+          <h3>
+            Generate New Card
+          </h3>
+        </button>
       </div>
     </div>
   </body>
